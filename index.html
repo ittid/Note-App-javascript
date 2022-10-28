@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <span class="brand">📝</span>
+      <h1>Note app</h1>
+      <p>
+        A Simple Note app Built For Fun by:
+        <a href="https://github.com/ittid" target="_blank">@ittid</a>
+      </p>
+    </main>
+    <div class="todo_grid">
+      <h1>Write Your Note Here</h1>
+      <textarea
+        aria-readonly="true"
+        name="note"
+        id="note"
+        cols="3"
+        rows="10"
+      ></textarea>
+      <button data-submit>Save Your Note</button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="wrapp_btn">
+      <button id="delete">delete note</button>
+      <button id="edit">edit note</button>
+    </div>
+    <section class="append_note">
+      <span id="text"></span>
+    </section>
+  </body>
+</html>
