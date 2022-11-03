@@ -8,6 +8,8 @@ addEventListener("DOMContentLoaded", () => {
   const deleteBtn = document.getElementById("delete");
   const editBtn = document.getElementById("edit");
   const text = document.getElementById("text");
+  //const appendNote = document.getElementsByClassName("append_note")[0];
+
   button.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -16,10 +18,16 @@ addEventListener("DOMContentLoaded", () => {
       textArea.style.borderWidth = "2px";
       textArea.style.borderColor = "red";
     } else {
+      /* 
+        Reset the values to the default css values
+      */
       textArea.style.border = "";
       textArea.style.borderWidth = "";
       textArea.style.borderColor = "";
       text.innerText = textArea.value;
+      /* 
+        set time so when the evenet work the value disapear  
+      */
       setTimeout(() => {
         textArea.value = "";
       }, 500);
